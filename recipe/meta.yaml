@@ -1,5 +1,5 @@
 {% set name = "google-cloud-life-sciences" %}
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6022b1a8786e228f073e5851ced9cdf84e46d77bea288b28c713a68fad4916df
+  sha256: 029249b5bf9b5922c7044e870f446d32824b91454a6c371a53cf08f977ed7642
 
 build:
   noarch: python
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
-    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - python >=3.7
+    - google-api-core-grpc >=2.8.0,<3.0.0dev
     - proto-plus >=1.15.0,<2.0.0dev
     - protobuf >=3.19.0,<4.0.0dev
 
