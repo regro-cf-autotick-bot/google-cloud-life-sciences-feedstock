@@ -1,5 +1,5 @@
 {% set name = "google-cloud-life-sciences" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9f86e1f93c913bfd4eae88497c9eccb14a0b21349ca7a9e59baa27bfd9503618
+  sha256: efe836a45bfbcb8d4fe053c140b95069635b2b938d3295d5bbb0263df952189b
 
 build:
   noarch: python
