@@ -3,7 +3,7 @@ About google-cloud-life-sciences-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-life-sciences-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/googleapis/python-life-sciences
+Home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-life-sciences
 
 Package license: Apache-2.0
 
