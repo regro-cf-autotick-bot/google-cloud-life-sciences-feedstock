@@ -1,5 +1,5 @@
 {% set name = "google-cloud-life-sciences" %}
-{% set version = "0.9.8" %}
+{% set version = "0.9.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: efe836a45bfbcb8d4fe053c140b95069635b2b938d3295d5bbb0263df952189b
+  sha256: b230b26cebf1d206b3adc99ad1d7b6d7e85f36d4edaf44fa1bcf99ae78920abe
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - python >=3.7
     - google-api-core >=1.34.1,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,!=2.10.*
     - google-api-core-grpc
-    - google-auth >=2.14.1,<3.0.0dev
+    - google-auth >=2.14.1,<3.0.0dev,!=2.24.0,!=2.25.0
     # use Python 3.11 version constraint to keep package noarch
     - proto-plus >=1.22.3,<2.0.0dev
     - protobuf >=3.19.5,<5.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
